@@ -1,6 +1,7 @@
 import json
 import config
 from device_list import get_device_list
+from ezviz_client import ezviz
 
 
 
@@ -33,3 +34,17 @@ def get_device_info(serial):
     print(json.dumps(info, indent = 4))
 
     return info
+
+
+def get_cam_key(serial):
+    try:
+        key = ezviz.get_client().get_cam_key(serial)
+
+        if key:
+            print(f"Camera key: {key}")
+            return str(key)
+
+    except Exception as error:
+        print("Could not fetch camera key from EZVIZ:", error)
+
+    return None

@@ -2,3 +2,7 @@ venv
 devices.json
 .env
 .DS_Store
+face_detection_yunet_2023mar.onnx
+test
+detected_faces
+detected_faces_test

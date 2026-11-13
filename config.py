@@ -15,3 +15,7 @@ DEVICE_SERIAL=os.getenv("DEVICE_SERIAL")
 REGION = os.getenv("REGION", "np")
 
 JSON_FILE = Path(__file__).parent / "devices.json"
+
+DETECTOR_MODEL = "face_detection_yunet_2023mar.onnx"
+
+SAVE_FACES_DIR = "detected_faces"
