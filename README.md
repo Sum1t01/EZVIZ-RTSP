@@ -27,8 +27,7 @@ Integrates EZVIZ device discovery, cloud authentication, camera key retrieval, l
     ```bash
     pip install opencv-python numpy python-dotenv pyezvizapi
 4. ***Download YuNet Model***  
-    Download **face_detection_yunet_2023mar.onnx** from the [OpenCV Zoo – YuNet Model](https://github.com/opencv/opencv_zoo/tree/main/models/face_detection_yunet).
-
+    Download **face_detection_yunet_2023mar.onnx** from the [OpenCV Zoo – YuNet Model](https://github.com/opencv/opencv_zoo/tree/main/models/face_detection_yunet).  
     Place the model in the project root directory.
 
 5. ***Configure Environment Variables***  
